@@ -39,3 +39,4 @@ testem.log
 Thumbs.db
 
 .nx/cache
+_zephyr_pack/zephyr-side-panel

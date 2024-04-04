@@ -11,8 +11,8 @@ const config: ModuleFederationConfig = {
 
 // Nx plugins for webpack to build config object from Nx options and context.
 export default composePlugins(
+  (config) => withZephyr()(config),
   withNx(),
   withReact(),
   withModuleFederation(config),
-  (config) => withZephyr()(config)
 );

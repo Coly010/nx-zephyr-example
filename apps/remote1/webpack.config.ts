@@ -14,5 +14,8 @@ export default composePlugins(
   withNx(),
   withReact(),
   withModuleFederation(config),
-  (config) => withZephyr()(config)
+  withZephyr(),
+  (config) => {
+    return config;
+  }
 );
